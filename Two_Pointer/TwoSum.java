@@ -1,8 +1,4 @@
-package Two_Pointer;
-
-public class TwoSum-II {
-    
-}/*
+/*
 Approach:
 1. Since the array is sorted in non-decreasing order, use the two-pointer technique.
 2. Initialize two pointers:

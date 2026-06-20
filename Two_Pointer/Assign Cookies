@@ -1,0 +1,35 @@
+/*
+Approach:
+1. Sort both the children and cookie arrays.
+2. Use two pointers:
+   - i = child pointer
+   - j = cookie pointer
+3. Compare the current child with the current cookie.
+   - If cookie >= greed, assign the cookie and move i.
+   - Always move j to check the next cookie.
+4. Return i as the number of content children.
+
+Time Complexity: O(n log n + m log m)
+Space Complexity: O(1)
+*/
+
+import java.util.Arrays;
+
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+
+        int i = 0;
+        int j = 0;
+
+        while (i < g.length && j < s.length) {
+            if (g[i] <= s[j]) {
+                i++;
+            }
+            j++;
+        }
+
+        return i;
+    }
+}

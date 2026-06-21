@@ -1,4 +1,6 @@
 /*
+    link:-> https://leetcode.com/problems/intersection-of-two-arrays
+
 Approach:
 1. Sort both input arrays.
 2. Use two pointers:
